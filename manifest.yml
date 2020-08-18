@@ -1,0 +1,10 @@
+applications:
+- name: magnolia_cloudfoundry_reactmvc
+  disk_quota: 1G
+  instances: 1
+  memory: 256MB
+  buildpacks:
+  - dotnet_core_buildpack
+  routes:
+  - route: magnoliareactmvc.cfapps.io
+  stack: cflinuxfs3
